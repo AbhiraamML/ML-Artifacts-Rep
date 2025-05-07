@@ -1,0 +1,49 @@
+Key     Value  Row_ID
+------------------------
+Name    Anurag  1
+Age     100     1
+Gender  Male    1
+Address Hyd     1
+Name    Shreya  2
+Age     99      2
+Gender  Female  2
+
+
+
+Name    Age  Gender  Address
+----------------------------
+Anurag  100  Male     Hyd
+Shreya  99   Female  
+
+
+select 
+row_id,
+case when key = 'name' then value end as 'Name',
+case when key = 'Age' then value else NULl end as 'Age',
+from 
+table
+
+Name    age
+Anurag null
+null   100
+
+
+Dynamic Query
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Row_ID | Name | Age
+1 Anurag null
+1 null 100
