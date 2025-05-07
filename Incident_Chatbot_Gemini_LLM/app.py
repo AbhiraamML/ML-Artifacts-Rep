@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__, template_folder=os.path.join(r'C:\Users\91996\OneDrive\Desktop\Incident_Chatbot'))
 
 # Configure Gemini API (Google Generative AI)
-genai.configure(api_key="AIzaSyBRVUM2GAIpbSjCnplnhhBiuynudl9XmJo")
+genai.configure(api_key="xxx")
 model = genai.GenerativeModel("gemini-2.0-flash")  # Updated to use gemini-2.0-flash
 
 # Initialize ChromaDB and Sentence Transformer for embeddings
